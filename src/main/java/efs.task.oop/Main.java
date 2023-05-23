@@ -29,7 +29,6 @@ public class Main {
             if(v6.getHealth() > 0)
             v6.attack(Monsters.blacksmith);
 
-            // Atak potworów na osadników
             if(Monsters.andariel.getHealth() >= 0)
                 Monsters.andariel.attack(v1);
             if(Monsters.andariel.getHealth() >= 0)
@@ -45,15 +44,12 @@ public class Main {
             }
         }
 
-        // Przywrócenie mocy ExtraordinaryVillagers
         deckardCain = (ExtraordinaryVillager) objectDeckardCain;
         akara = (ExtraordinaryVillager) objectAkara;
 
-        // Sprawdzenie wywołania metod z klasy ExtraordinaryVillager
         deckardCain.SayHello();
         akara.SayHello();
 
-        // Wynik bitwy
         if (Monsters.getMonstersHealth() <= 0) {
             System.out.println("Obozowisko ocalone!");
         }
