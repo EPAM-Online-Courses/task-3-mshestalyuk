@@ -1,4 +1,4 @@
-
+package efs.task.oop;
 import java.util.LinkedList;
 
 public class Main {
