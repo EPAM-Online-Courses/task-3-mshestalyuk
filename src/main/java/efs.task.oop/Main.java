@@ -1,4 +1,4 @@
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
         // Zadanie 1
         Villager v1 = new Villager("Kashya", 30);
