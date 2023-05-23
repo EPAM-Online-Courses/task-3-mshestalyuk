@@ -10,7 +10,7 @@ public class Villager implements Fighter{
         this.health = 100;
     }
 
-    void SayHello(){
+    void sayHello(){
         System.out.println("Greetings traveler... I'm " + name + " and I'm " + age + " years old");
     }
 

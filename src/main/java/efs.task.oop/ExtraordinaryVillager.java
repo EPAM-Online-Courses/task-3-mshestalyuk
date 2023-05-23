@@ -19,7 +19,7 @@ public class ExtraordinaryVillager extends Villager{
     }
 
     @Override
-    public void SayHello(){
+    public void sayHello(){
         System.out.println("Greetings traveler... I'm " + getName() + " and I'm " + getAge() + " years old. " + skill.getDescription());
     }
     @Override
