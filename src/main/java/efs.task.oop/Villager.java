@@ -1,17 +1,16 @@
 
 public class Villager implements Fighter{
-    String name;
-    double age;
-    int health;
+    protected String name;
+    protected int age;
+    protected int health = 100;
     Villager(){}
-    Villager(String name, double age){
+    Villager(String name, int age){
         this.name = name;
         this.age = age;
-        this.health = 100;
     }
 
-    void sayHello(){
-        System.out.println("Greetings traveler... I'm " + name + " and I'm " + age + " years old");
+    public void sayHello() {
+        System.out.println("Greetings traveler... I'm " + name + " and I'm " + age + " years old.");
     }
 
     @Override

@@ -1,6 +1,6 @@
 public abstract class Monster implements Fighter  {
-    int health;
-    int damage;
+    protected int health;
+    protected int damage;
     public int getDamage() {
         return damage;
     }
