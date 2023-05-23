@@ -1,3 +1,4 @@
+package efs.task.oop;
 public class ExtraordinaryVillager extends Villager{
     private final Skill skill;
     public enum Skill{
