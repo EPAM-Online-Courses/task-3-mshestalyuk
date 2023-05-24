@@ -2,7 +2,7 @@ package efs.task.oop;
 import java.util.LinkedList;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         // Zadanie 1
         Villager kashya = new Villager("Kashya", 30);
         Villager akara = new Villager("Akara", 40);
@@ -38,11 +38,11 @@ public class Main {
         monsters.add(Monsters.getBlacksmith());
 
 
-        System.out.println("Monster health: " + Monsters.getMonstersHealth());
+        System.out.println("Potwory posiadaja jeszcze " + Monsters.getMonstersHealth() + " punkty zycia");
         while (Monsters.getMonstersHealth() > 0) {
             System.out.println("Aktualnie walczacy osadnik to " + villagers.peek().getName());
             villagers.peek().attack(monsters.peek());
-            System.out.println("Monster health: " + Monsters.getMonstersHealth());
+            System.out.println("Potwory posiadaja jeszcze " + Monsters.getMonstersHealth() + " punkty zycia");
             if (monsters.peek().getHealth() <= 0) {
                 monsters.pop();
                 if (monsters.peek() == null) break;
