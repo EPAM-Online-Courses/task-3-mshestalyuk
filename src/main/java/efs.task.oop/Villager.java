@@ -1,10 +1,11 @@
+
 package efs.task.oop;
+
 public class Villager implements Fighter{
     protected String name;
     protected int age;
     protected int health = 100;
-    Villager(){}
-    Villager(String name, int age){
+    public Villager(String name, int age){
         this.name = name;
         this.age = age;
     }
